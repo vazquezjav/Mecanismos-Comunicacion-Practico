@@ -34,7 +34,7 @@ public class RMI {
             Naming.lookup(nombre)
         
         */
-        HelloService service = (HelloService) Naming.lookup("rmi://localhost:5099/hello");
+        InterfaceRemote service = (InterfaceRemote) Naming.lookup("rmi://localhost:5099/hello");
         System.out.println("--- "+service.ejemplo("servidor")+" "+service.getClass().getName());
         System.out.println("`---"+service.suma(5, 10)+" "+service.getClass().getName());
     }

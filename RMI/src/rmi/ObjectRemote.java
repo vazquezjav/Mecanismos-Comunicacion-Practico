@@ -12,7 +12,7 @@ import java.rmi.server.UnicastRemoteObject;
  *
  * @author javier
  */
-public class ObjectRemote extends UnicastRemoteObject implements HelloService{
+public class ObjectRemote extends UnicastRemoteObject implements InterfaceRemote{
 
     // implementa la interfaz del servidor 
     
